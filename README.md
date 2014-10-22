@@ -3,6 +3,8 @@ codewatch
 
 A utility for tracking code analysis metrics directly in the git repository.
 
+The basic goal here is to provide github-based projects the ability to track code quality metrics over time without using any service other than github and a CI. As far as any CI integration will be built into this product, my initial focus will be [travis](https://travis-ci.org/) but I see no reason that we would be locked into that.
+
 This is still a work in progress. The general plan is to build this from 5 building blocks:
 
 1. Utility for accessing git notes and working out which to use, most recent comparison point, etc. The basic "store tracked data in the repository" machinery.
