@@ -2,7 +2,7 @@ codewatch
 =========
 
 [![Build Status](https://travis-ci.org/peachjean/codewatch.svg)](https://travis-ci.org/peachjean/codewatch)
-[![Documentation](https://readthedocs.org/projects/codewatch/?badge=latest)](http://codewatch.readthedocs.org/)
+[![Documentation Status](https://readthedocs.org/projects/codewatch/badge/?version=latest)](https://readthedocs.org/projects/codewatch/?badge=latest)
 
 A utility for tracking code analysis metrics directly in the git repository.
 
