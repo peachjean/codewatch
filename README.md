@@ -1,6 +1,9 @@
 codewatch
 =========
 
+[![Build Status](https://travis-ci.org/peachjean/codewatch.svg)](https://travis-ci.org/peachjean/codewatch)
+[![Documentation](https://readthedocs.org/projects/codewatch/?badge=latest)](http://codewatch.readthedocs.org/)
+
 A utility for tracking code analysis metrics directly in the git repository.
 
 The basic goal here is to provide github-based projects the ability to track code quality metrics over time without using any service other than github and a CI. As far as any CI integration will be built into this product, my initial focus will be [travis](https://travis-ci.org/) but I see no reason that we would be locked into that.
