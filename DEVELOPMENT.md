@@ -22,6 +22,8 @@ We have a:
   metrics aggregation -- website displaying historical metrics -- driver-style extension
   build tool integrations -- integrations in build tools that call out to codewatch
 
+Use stevedore for extension management (https://github.com/dreamhost/stevedore)
+
 
 When a build runs, all configured data gets stored as a note attached to the
 given sha.
