@@ -17,8 +17,10 @@ Run tests with the command ``python setup.py test``.
 ## Design
 
 We have a:
-  data type -- coverage data or rule sets
-
+  data type -- coverage data or rule sets -- self-selecting extension
+  hosting api -- commenting on commits or pull requests -- driver-style extension (allowing detection would be sweet)
+  metrics aggregation -- website displaying historical metrics -- driver-style extension
+  build tool integrations -- integrations in build tools that call out to codewatch
 
 
 When a build runs, all configured data gets stored as a note attached to the
@@ -37,17 +39,24 @@ The tool allows pulling reports out for a given sha.
 
 Phase 1: Arbitrary data stored.
 Phase 1a: invoked by travis (using setup tools)
+Phase 1b: documentation on setting it up in travis
+Phase 1c: documentation publishing to readthedocs
 Phase 2: coverage data stored. 
+Phase 2a: coverage data format documented
 Phase 3: diff generated on stdout
+Phase 3a: diff format documented
 Phase 4: rule data stored and diffed on stdout (probably pylint)
+Phase 4a: rule data format and diff format documented
 Phase 5: diff info posted to commits
 Phase 6: diff info posted to pull requests
 Phase 7: pass/fail outputted based on diff and thresholding info
 Phase 8: PR statuses updated with pass/fail 
 Phase 9: coverage and rule data moved into plugins
+Phase 9a: datatype plugin development documented
 Phase 10: diff info published to PRs as well-formatted comments
 Phase 11: browseable website published to gh-pages
 Phase 12: maven project publishing info
+Phase 12a: maven usage documented
 Phase 13: "post" functionality pluginified
 Phase 13a: stash support added
 Phase 14: website functionality pluginified
